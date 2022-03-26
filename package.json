@@ -1,0 +1,24 @@
+{
+  "name": "spruce-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "`index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":" nodemon backend/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@spruceid/didkit": "^0.3.0-beta.3",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8",
+    "mongoose-slug-generator": "^1.0.4",
+    "ngrok": "^4.3.1",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  }
+}
