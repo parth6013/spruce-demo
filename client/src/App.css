@@ -36,3 +36,107 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+.website-container {
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar {
+    /* left: 0; */
+    height: 99.9vh;
+    width: 60px;
+    background: linear-gradient(137.48deg, rgba(255, 83, 188, 0.15) 15.13%, rgba(10, 252, 212, 0.15) 87.01%);
+    backdrop-filter: blur(41.9417px);
+    display: flex;
+    border-right: 1.5px solid rgba(9, 251, 211, 0.7);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 2vh;
+    width: 45px;
+    height: 45px;
+}
+
+.navigation-button {
+    margin: 15px 0;
+    padding: 12px 12px;
+}
+
+.navigation-button:hover {
+    background: rgba(255, 255, 255, 0.05);
+box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.08), 0px 6px 12px rgba(50, 50, 71, 0.006);
+border-radius: 13px;
+}
+
+
+.body-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-heading {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, #E473FF -2.05%, #EB8DC9 4.2%, #EC93BD 22.89%, #F1A894 38.61%, #32DCF6 48.91%, #37D4F6 68.73%, #54BEE8 74.98%, #849AD0 84.35%, #C569AF 95.8%, #EE4A9A 102.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 0vh;
+}
+
+.input-field {
+  background-color: transparent; 
+  border: none; 
+  border-bottom: 1px solid #FD9FBA; 
+  outline: none; 
+  color: #FD9FBA; 
+  font-family: Poppins; 
+  font-size: 18px;
+  width: 250px;
+}
+
+.input-field::placeholder {
+    /* padding-left: 10px; */
+    font-family: Poppins;
+    font-style: italic;
+}
+
+.primary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    background: transparent;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid #EA86D8;
+
+}
+.primary-button:hover {
+  cursor: pointer;
+}
+.button-text {
+    font-family: poppins;
+    color: #EA86D8;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.button-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.redirect-link {
+  color: #EA86D8;
+}
