@@ -1,9 +1,14 @@
 import React,{useState} from "react";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
+import './App.css';
 import axios from "axios";
 import Register from "./components/Register.js";
 import Login from "./components/Login.js";
-
+import logo from './assets/logo.png';
+import passport from "./assets/passport-icon.png";
+import metaversity from "./assets/metaversity-icon.png";
+import mapIcon from "./assets/map-icon.png";
+import helpIcon from "./assets/help-icon.png";
 function App() {
 
   const [_id,setID] = useState("");
@@ -53,6 +58,34 @@ function App() {
 
 
     <div>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
+      </head>
+      <body>
+      <div className="website-container">
+        <section className="sidebar">
+            <img src={logo} alt="Saraverse" className="logo" />
+            <div className="navigation-container">
+                <div className="navigation-button">
+                    <img src={passport} alt="passport" sizes="32" />
+                </div>
+                <div className="navigation-button">
+                    <img src={metaversity} alt="passport" sizes="32" />
+                </div>
+                <div className="navigation-button">
+                    <img src={mapIcon} alt="passport" sizes="32" />
+                </div>
+                <div className="navigation-button">
+                    <img src={helpIcon} alt="passport" sizes="32" />
+                </div>
+            </div>
+            <div className="expand">x</div>
+        </section>
+        <section className="body-container">
+          <h1 className="main-heading">Welcome to Saraverse</h1>
       <BrowserRouter>
           <Switch>
             {_id!==""?(
@@ -89,6 +122,9 @@ function App() {
             )}
           </Switch>
       </BrowserRouter>
+      </section>
+        </div>
+        </body>
     </div>
   );
 }

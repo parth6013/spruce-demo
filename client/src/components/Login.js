@@ -1,7 +1,8 @@
 import React from "react";
 import {useHistory} from "react-router-dom";
 import axios from "axios";
-
+import '../App.css';
+import enterIcon from '../assets/enter-icon.png';
 function Login(props){
 
     const{
@@ -39,11 +40,16 @@ function Login(props){
 
     return(
         <div>
-                <label for="lname">Twitter_Id</label><br></br>
-                <input type="text" id="lname" value={twitterId} onChange={(e)=>setTwitterId(e.target.value)} name="lname"/>
-                <label for="Password">Password</label><br></br>
-                <input type="password" id="Password" value={password} onChange={(e)=>setPassword(e.target.value)} name="lname"/>
-                <button onClick={signIn}>Login.</button>
+            <input type="text" id="lname" value={twitterId} onChange={(e)=>setTwitterId(e.target.value)} name="lname" placeholder="Twitter Id" className="input-field" />
+                <br></br>
+                <br></br>
+                <input type="password" id="Password" value={password} onChange={(e)=>setPassword(e.target.value)} name="lname" placeholder="Password" className="input-field" />
+                <br></br>
+                <br></br>
+                <button class="primary-button" onClick={signIn}>
+                        <div class="button-text">Login</div>
+                        <img src={enterIcon} alt="enter" class="button-icon" />
+                    </button>
         </div>
     )
 }
