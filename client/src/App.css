@@ -76,6 +76,7 @@ border-radius: 13px;
 
 
 .body-container{
+  
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -135,8 +136,24 @@ border-radius: 13px;
 .button-icon {
     width: 15px;
     height: 15px;
+    fill: #fff;
 }
 
 .redirect-link {
   color: #EA86D8;
+}
+
+.sub-heading{
+  font-family: Poppins;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.highlight {
+  font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, #E473FF -2.05%, #EB8DC9 4.2%, #EC93BD 22.89%, #F1A894 38.61%, #32DCF6 48.91%, #37D4F6 68.73%, #54BEE8 74.98%, #849AD0 84.35%, #C569AF 95.8%, #EE4A9A 102.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
