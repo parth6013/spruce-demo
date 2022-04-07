@@ -9,6 +9,7 @@ import passport from "./assets/passport-icon.png";
 import metaversity from "./assets/metaversity-icon.png";
 import mapIcon from "./assets/map-icon.png";
 import helpIcon from "./assets/help-icon.png";
+import verifiedIcon from "./assets/verified.png";
 function App() {
 
   const [_id,setID] = useState("");
@@ -86,24 +87,36 @@ function App() {
         </section>
         <section className="body-container">
           <h1 className="main-heading">Welcome to Saraverse</h1>
+          <div className="content-container">
       <BrowserRouter>
           <Switch>
             {_id!==""?(
               <>
               {/*Logged in. */}
-                <h3>Spruce Demo.</h3>
-                <h4>Hello {_id}</h4>
+                {/* <h3>Spruce Demo.</h3> */}
+                <h4 className="sub-heading" style={{fontSize:'21px'}} >Hello <span className="highlight">{_id}</span>!</h4>
                 {verified==="1"?(
-                  <>
-                    You're Verified.
-                  </>
+                  <div style={{display:"flex", flexDirection:'row', alignItems: 'center'}}>
+                  <h4 className="sub-heading">
+                    You're Verified
+                  </h4>
+                  <img src={verifiedIcon} style={{height: "25px", width:'48px'}}></img>
+                  </div>
                 ):(
-                  <>
-                    You're Yet to getVerified.
-                    <button onClick={verification}>Get Verified!!.</button>
-                  </>
+                  <div>
+                  <h4 className="sub-heading">
+                    You're Yet to be Verified.
+                  </h4>
+                  <button class="primary-button" onClick={verification} style={{background:"#EA86D8"}} >
+                        <div class="button-text" style={{color:"#302b0c"}} >Get Verified</div>
+                    </button>
+
+                    </div>
                 )}
-                <button onClick={onLogout}>Logout.</button>
+                <br></br>
+                <button class="primary-button" onClick={onLogout}>
+                        <div class="button-text">Logout</div>
+                    </button>
               </>
             ):(
               <>
@@ -122,6 +135,7 @@ function App() {
             )}
           </Switch>
       </BrowserRouter>
+      </div>
       </section>
         </div>
         </body>

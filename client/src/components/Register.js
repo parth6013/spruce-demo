@@ -2,7 +2,7 @@ import React from "react";
 import {useHistory, Link} from "react-router-dom";
 import axios from "axios";
 import '../App.css';
-import enterIcon from '../assets/enter-icon.png';
+import enterIcon from '../assets/enter-icon.svg';
 function Register(props){
 
     const{
